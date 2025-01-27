@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Om Kondekar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c2a700d4ef.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/x-icon" href="favicon1.png" />
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a
+            style="
+              margin-top: 10px;
+              font-size: 25px;
+              font-weight: 100;
+              text-decoration: none;
+            "
+            target="_blank"
+          >
+            <h1 style="color: #ff004f" class="name" href="#header">
+              < <i> Omk </i>/>
+            </h1></a
+          >
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Interest</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="hero">
+          <div class="header-text">
+            <h1>
+              Hi<span class="wave">👋</span>, I'm <span>Om</span>
+              <br />From Pune
+            </h1>
+          </div>
+          <div class="meImgae">
+            <img src="My_img.jpg" alt="" />
+          </div>
+          <div class="mobileImage">
+            <div class="img"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/me.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              To succeed in an environment of growth and excellence and earn a
+              position that provides me job satisfaction and self-development to
+              achieve personal as well as organizational goals. I can utilize my
+              skills and knowledge efficiently for organizational growth.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Educations</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web-development</span><br />Web app development</li>
+                <li>
+                  <span>Languages</span><br />ReactJS | NodeJS | ExpressJS |
+                  HTML | CSS | JS | MongoDB | Java | MySQL
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Trainee Engineer </span><br /> Arya System
+                  [June 2023*]
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2024</span><br />B.tech. at PCCOE Pune.</li>
+                <li><span>2021</span><br />Diploma at PLGP Latur.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------------------services------------------------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Interests</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Frontend Design</h2>
+            <p>
+              I am able to create basic Frontend design using ReactJs ,Js, Html
+              , CSS , Bootstrap and Js
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-layer-group"></i>
+            <h2>Backend Design</h2>
+            <p>
+              I am able to create basic REST ful api's using MySQL and mongoDB
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Top Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img
+              src="https://images.unsplash.com/photo-1604605801370-3396f9bd9cf0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <div class="layer">
+              <h3>MERN-STACK E-COMMERSE WEBSITE</h3>
+              <p>
+                Amazon Clone
+                <br />
+                Tools : REACTJS | NODEJS | EXPRESS| MONGODB | HTML | CSS |
+                REACT-BOTSTRAP
+              </p>
+              <a href="https://amazonnew.onrender.com" target="_blank"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img
+              src="https://images.unsplash.com/photo-1624434207284-727cf0e6ea8e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <div class="layer">
+              <h3>MI-STORE</h3>
+              <p>
+                Mi-Store Clone<br />
+                Tools: React, Html, CSS, JS
+              </p>
+              <a href="https://mistore-sc.vercel.app/" target="_blank"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img
+              src="https://cdn-bgp.bluestacks.com/BGP/us/gametiles_in.startv.hotstar.jpg"
+            />
+            <div class="layer">
+              <h3>HOTSTAR CLONE</h3>
+              <p>
+                THis is a clone of Hotstar <br />
+                Tools : REACTJS | CSS | MOVIE-DB-API
+              </p>
+              <a href="https://hotstar-2z2m.onrender.com/" target="_blank"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img
+              src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1510&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <div class="layer">
+              <h3>PORTFOLIO</h3>
+              <p>
+                This portfolio created using React and SCSS <br />
+                Tools : REACTJS | SASS | FRAMER-MOTION | CSS
+              </p>
+              <a href="" target="_blank"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img
+              src="https://images.unsplash.com/photo-1580737061343-bb08ed1a4e8a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <div class="layer">
+              <h3>WEATHER APP</h3>
+              <p>
+                This app created using weather api <br />
+                Tools: React | CSS | JS
+              </p>
+              <a href="https://weather-app-vr.vercel.app/" target="_blank"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://github.com/Omkondekar02" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- -----------------contact-------------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>kondekarom75@gmail.com
+            </p>
+            <p><i class="fa-sharp fa-solid fa-square-phone"></i>9373598652</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/om-kondekar-1491b920b?"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/om_kondekar1008/?next=%2F"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://github.com/Omkondekar02" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a target="_blank" class="btn btn2" href="Om Resume Ok.pdf" download
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="email"
+                placeholder="Your E-mail"
+                required
+              />
+              <textarea
+                name="Meassage"
+                placeholder=" Meassage/Feedback "
+                rows="5 "
+              ></textarea>
+              <button class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Omk<i class="fa-solid fa-heart"></i>. All rights
+          reserved.
+        </p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName('tab-links');
+      var tabcontents = document.getElementsByClassName('tab-contents');
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove('active-link');
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+      }
+    </script>
+    <script>
+      var sidemeu = document.getElementById('sidemenu');
+      function openmenu() {
+        sidemeu.style.right = '0';
+      }
+      function closemenu() {
+        sidemeu.style.right = '-200px';
+      }
+    </script>
+    <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbzXTzPPb0m7_MKw40e9d1tmeHKdV6Lx0UAfRapHwlQI2lqryEOvIEOZ1sYWbdA-8wmI6g/exec';
+      const form = document.forms['submit-to-google-sheet'];
+      const msg = document.getElementById('msg');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = 'Thanks for your valuable feedback..!';
+            setTimeout(function () {
+              msg.innerHTML = '';
+            }, 1000);
+            form.reset();
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+  </body>
+</html>
